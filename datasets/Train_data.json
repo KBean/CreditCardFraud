@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "judy.nam@dataiku.com"
     },
-    "lastModifiedOn": 1680754473113
+    "lastModifiedOn": 1680754477058
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,12 +75,26 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "30e35841c6f58024f4423bd7d44c7609ebf42397c596d2bb1da801e5e6c96f58",
     "files": [
       "/Train_data.csv"
     ],
-    "uploadConnection": "dataiku-managed-storage",
     "uploadFSProviderType": "S3",
+    "uploadedConfig": {
+      "bucket": "gis-dataiker-2-data-1",
+      "metastoreSynchronizationEnabled": true,
+      "metastoreDatabaseName": "default",
+      "metastoreTableName": "${projectKey}_Train_data",
+      "connection": "dataiku-managed-storage",
+      "path": "/managed-dss-data/uploads/${projectKey}/Train_data",
+      "notReadyIfEmpty": false,
+      "filesSelectionRules": {
+        "mode": "ALL",
+        "excludeRules": [],
+        "includeRules": [],
+        "explicitFiles": []
+      }
+    },
+    "connection": "dataiku-managed-storage",
     "notReadyIfEmpty": false,
     "previewFile": "/Train_data.csv",
     "filesSelectionRules": {
