@@ -3880,6 +3880,7 @@
     "metrics": {
       "customMetrics": [],
       "evaluationMetric": "ROC_AUC",
+      "customEvaluationMetricCode": "def score(y_valid, y_pred):\n    \"\"\"\n    Custom scoring function.\n    Must return a float quantifying the estimator prediction quality.\n    - y_valid is a pandas Series\n    - y_pred is a numpy ndarray with shape:\n            - (nb_records,) for regression problems and classification problems\n            where \u0027needs probas\u0027 (see below) is false\n            (for classification, the values are the numeric class indexes)\n            - (nb_records, nb_classes) for classification problems where\n            \u0027needs probas\u0027 is true\n    - [optional] X_valid is a dataframe with shape (nb_records, nb_input_features)\n    - [optional] sample_weight is a numpy ndarray with shape (nb_records,)\n                    NB: this option requires a variable set as \"Sample weights\"\n    \"\"\"\n    ",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "thresholdOptimizationMetric": "F1",
