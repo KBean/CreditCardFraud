@@ -1225,8 +1225,7 @@
           "min": 1
         },
         "values": [
-          200,
-          150
+          200
         ],
         "range": {
           "min": 80,
@@ -1243,7 +1242,6 @@
           "min": 1
         },
         "values": [
-          6,
           15
         ],
         "range": {
@@ -1944,7 +1942,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": true
+      "enabled": false
     },
     "neural_network": {
       "layer_sizes": {
@@ -3971,9 +3969,10 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "CLASS_REBALANCE_TARGET_NB_APPROX",
       "maxRecords": 100000,
       "targetRatio": 0.02,
+      "column": "authorized_flag",
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
